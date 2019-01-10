@@ -92,7 +92,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @LineMessageHandler
 public class KitchenSinkController {
-    
     @Autowired
     private LineMessagingClient lineMessagingClient;
 
