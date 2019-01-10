@@ -92,22 +92,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @LineMessageHandler
 public class KitchenSinkController {
-    @RestController
-    public class IndexController implements ErrorController{
-
-        private static final String PATH = "/error";
-
-        @RequestMapping(value = PATH)
-        public String error() {
-            return "Error handling";
-        }
-
-        @Override
-        public String getErrorPath() {
-            return PATH;
-        }
-    }
-
+    
     @Autowired
     private LineMessagingClient lineMessagingClient;
 
