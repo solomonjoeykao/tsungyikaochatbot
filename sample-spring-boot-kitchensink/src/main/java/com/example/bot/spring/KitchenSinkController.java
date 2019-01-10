@@ -222,7 +222,7 @@ public class KitchenSinkController {
         if (message.length() > 1000) {
             message = message.substring(0, 1000 - 2) + "……";
         }
-        // this.reply(replyToken, new TextMessage(message));
+        this.reply(replyToken, new TextMessage(message));
     }
 
     private void handleHeavyContent(String replyToken, String messageId,
